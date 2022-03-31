@@ -72,7 +72,6 @@ header{
     position: relative;
     display: flex;
     justify-content: center;
-
   }
   
   .pTop{
@@ -97,7 +96,6 @@ header{
   
   .pic{
     width: 500px;
-    object-fit: cover;
   }
   
   .App-logo {
