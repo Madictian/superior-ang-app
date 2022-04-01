@@ -1,0 +1,16 @@
+<div class="DiceApp">
+
+    <div class="gameContainer">
+    
+        <div>
+            <h2>tenzies</h2>
+            <h3>send hjælp</h3>
+        </div>
+        <div class="diceContainer" >
+                <app-dice *ngFor="let dice of dices" [dice]="dice" (diceEvent)="saveDice($event)"></app-dice>
+        </div>
+        <button *ngIf="!completed" (click)="rerollDice()"> Roll Bitch! </button>
+        <button *ngIf="completed" (click)="resetGame()"> New Round </button>
+    
+    </div>
+    </div>

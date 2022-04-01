@@ -7,11 +7,15 @@ import { AppComponent } from './app.component';
 import { MemeGeneratorComponent } from './meme-generator/meme-generator.component';
 import { MemeService } from './meme.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DiceComponent } from './dice/dice.component';
+import { DiceBoardComponent } from './dice-board/dice-board.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MemeGeneratorComponent
+    MemeGeneratorComponent,
+    DiceComponent,
+    DiceBoardComponent
   ],
   imports: [
     BrowserModule,
