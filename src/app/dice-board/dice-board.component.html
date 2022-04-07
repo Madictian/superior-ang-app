@@ -1,7 +1,16 @@
+<nav>
+  <ul>
+    <li> <a routerLink="/dice" >dice</a>
+    </li>
+    <li> <a routerLink="/memes">meme</a>
+    </li>
+  </ul>
+</nav>
+
 <div class="DiceApp">
 
     <div class="gameContainer">
-    
+
         <div>
             <h2>tenzies</h2>
             <h3>send hjælp</h3>
@@ -11,6 +20,6 @@
         </div>
         <button *ngIf="!completed" (click)="rerollDice()"> Roll Bitch! </button>
         <button *ngIf="completed" (click)="resetGame()"> New Round </button>
-    
+
     </div>
     </div>

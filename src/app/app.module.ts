@@ -9,13 +9,15 @@ import { MemeService } from './meme.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DiceComponent } from './dice/dice.component';
 import { DiceBoardComponent } from './dice-board/dice-board.component';
+import { FrontComponent } from './front/front.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MemeGeneratorComponent,
     DiceComponent,
-    DiceBoardComponent
+    DiceBoardComponent,
+    FrontComponent
   ],
   imports: [
     BrowserModule,

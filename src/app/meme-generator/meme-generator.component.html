@@ -1,4 +1,11 @@
-
+<nav>
+  <ul>
+    <li> <a routerLink="/dice" >dice</a>
+    </li>
+    <li> <a routerLink="/memes">meme</a>
+    </li>
+  </ul>
+</nav>
 <div class="App">
 
     <header class="header">
@@ -8,28 +15,28 @@
     </div>
     <p>Angular Refactor</p>
     </header>
-    
+
     <div class="Input" >
     <form [formGroup]="memeForm">
-    
+
     <input type="text" placeholder="shut up" formControlName="formTop">
-     
-    <input type="text" placeholder="and take my money"formControlName="formBot">
-    
+
+    <input type="text" placeholder="and take my money" formControlName="formBot">
+
     <button class="generateImage" type="submit" [disabled]="!memeForm.valid" (click)="onSubmit()">
       <p>generate meme</p>
       <img src="" alt="">
     </button>
-    
+
     </form>
     </div>
-    
-    
+
+
     <div class="MemePic">
       <p class="pTop">{{[memeForm.value.formTop]}}</p>
       <p class="pBottom">{{memeForm.value.formBot}}</p>
       <img src={{meme.url}} alt="" class="pic">
     </div>
-    
-    
+
+
     </div>
